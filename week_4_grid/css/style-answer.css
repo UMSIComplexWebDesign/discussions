@@ -1,0 +1,127 @@
+h1, footer{
+	padding:5px;
+	text-align: center;
+}
+
+footer{
+	background: black;
+	color: white;
+	width: 93.5vw;
+	margin: auto;
+	margin-top:5px;
+}
+.container{
+	display:grid;
+	grid-row-gap: 5px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(9,350px);
+	margin: auto;
+  width: 95vw;
+}
+
+.container div{
+	overflow: hidden;
+}
+
+
+
+@media all and (min-width:720px){
+	.container{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6,350px);
+		grid-row-gap:0px;
+
+	}
+	.img-three, .img-six, .img-seven{
+		grid-column: 1 / span 2;
+	}
+
+	.img-nine{
+		grid-row:5 / span 1;
+		grid-column: 1 / span 1;
+	}
+
+	.img-seven{
+		grid-row: 6 / span 1;
+	}
+}
+@media only screen and (min-width: 1024px){
+	
+/* Desktop layout */
+.container{ 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px 350px 350px 350px;
+}
+
+.img-one{
+  background-color: red;
+  grid-column: 3 / -1;
+  grid-row: 1 / auto;
+  /* grid-column-end: 3;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2; */
+  overflow: hidden;
+}
+
+.img-two{
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  /* grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  overflow: hidden;
+}
+
+.img-three{
+  background-color: green;
+  grid-column: 3 / -1;
+  grid-row: 2 / auto;
+  /* grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+  overflow: hidden;
+}
+
+.img-four{
+  background-color: purple;
+  grid-column: 2 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-five{
+  background-color: blue;
+  grid-column: 1 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-six{
+  background-color: yellow;
+  grid-column: 3 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-seven{
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 2;
+  overflow: hidden;
+}
+
+.img-eight{
+  grid-column: 1 / auto;
+  grid-row: 4 / span 2;
+  overflow: hidden;
+}
+
+.img-nine{
+  grid-column: 4 / -1;
+  grid-row: 3 / span 3;
+  overflow: hidden;
+}
+}

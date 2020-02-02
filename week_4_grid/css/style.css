@@ -1,0 +1,37 @@
+h1, footer{
+  padding:5px;
+  text-align: center;
+}
+
+footer{
+  background: black;
+  color: white;
+  width: 93.5vw;
+  margin: auto;
+  margin-top:5px;
+}
+.container{
+  display:/*YOUR CODE HERE:*/;
+  grid-row-gap: 5px;
+  grid-template-columns: /*YOUR CODE HERE:*/;
+  grid-template-rows: repeat(9,350px);
+  margin: auto;
+    width: 95vw;
+}
+
+.container div{
+  /*YOUR CODE HERE:*/
+}
+
+
+
+@media all and (min-width:720px){
+    /*YOUR CODE HERE:*/
+
+
+}
+@media only screen and (min-width: 1024px){
+    /*YOUR CODE HERE:*/
+
+
+}
